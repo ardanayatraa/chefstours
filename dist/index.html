@@ -1,98 +1,144 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-  <meta http-equiv="refresh" content="10"> <!-- Refresh every 3 seconds -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <meta http-equiv="refresh" content="10"> <!-- Refresh every 3 seconds -->
 </head>
+
 <body>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
         .font-allura {
-  font-family: 'Allura', cursive;
+            font-family: 'Allura', cursive;
         }
-        </style>
-        
-<!-- Start navbar -->
-        <nav class="w-[1440px] h-[76px] z-50 px-[120px] py-4 bg-transparent fixed top-0 left-1/2 transform -translate-x-1/2 mx-auto">
 
-    <div class="flex">
+        @import url('/src/font/canela/Canela Family/Canela-Regular-Trial.otf');
 
-        <div class="w-[150px] h-auto gap-2 flex">
-            <div>
-                <img src="../src/img/logo.png" alt="logo">
+        @font-face {
+            font-family: 'CS Canela';
+            src: url('/src/font/canela/Canela Family/Canela-Light-Trial.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* In your CSS file */
+        .canela {
+            font-family: 'CS Canela', sans-serif;
+            font-size: 48px;
+            font-weight: 400;
+            /* normal weight */
+            line-height: 57.6px;
+            text-align: center;
+        }
+    </style>
+
+    <!-- Start navbar -->
+    <nav
+        class="w-[1440px] h-[76px] z-50 px-[120px] py-4 bg-transparent fixed top-0 left-1/2 transform -translate-x-1/2 mx-auto">
+
+        <div class="flex">
+
+            <div class="w-[150px] h-auto gap-2 flex">
+                <div>
+                    <img src="../src/img/logo.png" alt="logo">
+                </div>
+                <div>
+
+                    <h4 class="font-allura font-normal text-[28px] text-white">Chefs Tours</h4>
+                </div>
             </div>
-          <div>
-            
-              <h4 class="font-allura font-normal text-[28px] text-white">Chefs Tours</h4>
-          </div>
-          </div>
-          <div class="flex gap-3 w-64 h-9 mx-auto">
-            <div class="relative w-[66px] min-w-[66px] h-9 p-2 group">
-                <h3 class="text-white font-normal text-sm leading-5">ABOUT</h3>
-                <span class="absolute bottom-0 left-0 w-0 h-1 bg-white transition-all duration-300 group-hover:w-full"></span>
+            <div class="flex gap-3 w-64 h-9 mx-auto">
+                <div class="relative w-[66px] min-w-[66px] h-9 p-2 group">
+                    <h3 class="text-white font-normal text-sm leading-5">ABOUT</h3>
+                    <span
+                        class="absolute bottom-0 left-0 w-0 h-1 bg-white transition-all duration-300 group-hover:w-full"></span>
+                </div>
+                <div class="relative w-[66px] min-w-[66px] h-9 p-2 group">
+                    <h3 class="text-white font-normal text-sm leading-5">TOUR</h3>
+                    <span
+                        class="absolute bottom-0 left-0 w-0 h-1 bg-white transition-all duration-300 group-hover:w-full"></span>
+                </div>
+                <div class="relative w-auto min-w-[66px] h-9 p-2 group">
+                    <h3 class="text-white font-normal text-sm leading-5">CONTACT US</h3>
+                    <span
+                        class="absolute bottom-0 left-0 w-0 h-1 bg-white transition-all duration-300 group-hover:w-full"></span>
+                </div>
             </div>
-            <div class="relative w-[66px] min-w-[66px] h-9 p-2 group">
-                <h3 class="text-white font-normal text-sm leading-5">TOUR</h3>
-                <span class="absolute bottom-0 left-0 w-0 h-1 bg-white transition-all duration-300 group-hover:w-full"></span>
-            </div>
-            <div class="relative w-auto min-w-[66px] h-9 p-2 group">
-                <h3 class="text-white font-normal text-sm leading-5">CONTACT US</h3>
-                <span class="absolute bottom-0 left-0 w-0 h-1 bg-white transition-all duration-300 group-hover:w-full"></span>
+
+            <div class="w-[134px] h-[44px] p-[12px] gap-[8px] border flex items-center justify-center">
+                <h4 class="text-white">BOOK NOW</h4>
             </div>
         </div>
-        
-        <div class="w-[134px] h-[44px] p-[12px] gap-[8px] border flex items-center justify-center">
-            <h4 class="text-white">BOOK NOW</h4>
-        </div> 
+    </nav>
+    <!-- End navbar -->
+
+    <!-- Start Hero Section -->
+    <div class="relative w-[1440px] border h-[944px] mx-auto">
+        <img src="../src/img/hero1.png" alt="Gambar" class="w-full h-full object-cover">
+
+
+        <div
+            class="absolute top-0 flex-col  border left-0 bg-gradient-to-b from-black/60 via-black/30 to-transparent w-full h-full flex items-center justify-center">
+            <div class="border border-white flex-col gap-8 ">
+                <div class="mx-auto">
+                    <p class="text-white text-4xl">Welcome to</p>
+                </div>
+                <div class="relative flex items-center mx-auto">
+                    <span class="absolute inset-y-0  transform -translate-x-0 flex items-center">
+                        <img src="../src/img/logo-color.png" alt="Logo" class="w-12 h-12">
+                    </span>
+                    <h4 class="font-allura font-normal text-[88px] leading-[88px] text-white">
+                        Chefs Tours
+                    </h4>
+                </div>
+
+                <div class="">
+                    <p class="text-white">Enjoy culinary and beverage tours and experiences for Discerning public and
+                        Hospitality Professionals.</p>
+                </div>
+            </div>
+
+            <div class="flex mt-[58px] gap-6">
+
+                <div class="w-[126px] h-[44px] bg-primary border border-primary flex items-center justify-center">
+                    <a class="text-white font-medium" href="">BOOK NOW</a>
+                </div>
+
+                <div class="w-[126px] h-[44px] border flex items-center justify-center">
+                    <span class="text-white font-medium">SEE MORE</span>
+                </div>
+            </div>
+
+        </div>
+
     </div>
-</nav>
-<!-- End navbar -->
+    <!-- End Hero Section -->
 
-<!-- Start Hero Section -->
-<div class="relative w-[1440px] border h-[944px] mx-auto">
-    <img src="../src/img/hero1.png" alt="Gambar" class="w-full h-full object-cover">
-    
-
-    <div class="absolute top-0 flex-col  border left-0 bg-gradient-to-b from-black/60 via-black/30 to-transparent w-full h-full flex items-center justify-center">
-        <div class="border border-white flex-col gap-8 ">
-            <div class="mx-auto">
-                <p class="text-white text-4xl">Welcome to</p>
-            </div>
-            <div class="relative flex items-center mx-auto">
-                <span class="absolute inset-y-0  transform -translate-x-0 flex items-center">
-                    <img src="../src/img/logo-color.png" alt="Logo" class="w-12 h-12">
-                </span>
-                <h4 class="font-allura font-normal text-[88px] leading-[88px] text-white">
-                    Chefs Tours
-                </h4>
-            </div>
-            
-            <div class="">
-                <p class="text-white">Enjoy culinary and beverage tours and experiences for Discerning public and Hospitality Professionals.</p>
-            </div> 
+    <div class="w-[1440px] h-[944px]  p-[100px_120px_120px_120px] gap-[120px] mx-auto flex-col border">
+        <div class="mx-auto border">
+            <h3 class="text-[#26517E] text-center font-cs-canela font-normal text-[57.6px]">Welcome to Chef Tour, a
+                travel service
+                that offer an
+                unparalleled
+                experience of
+                Europe’s hidden
+                gems.
+            </h3>
         </div>
 
-        <div class="flex mt-[58px] gap-6">
-      
-            <div class="w-[126px] h-[44px] bg-primary border border-primary flex items-center justify-center">
-                <a class="text-white font-medium" href="">BOOK NOW</a>
-            </div>
 
-            <div class="w-[126px] h-[44px] border flex items-center justify-center">
-                <span class="text-white font-medium">SEE MORE</span>
-            </div>
+        <div class="flex w-[1201px] h-[488px]">
+            <div><img src="/src/img/image1.png" alt=""></div>
+            <div></div>
+
         </div>
-        
-        
     </div>
-    
- 
-</div>
-<!-- End Hero Section -->
-</div>
 
 
 </body>
+
 </html>
