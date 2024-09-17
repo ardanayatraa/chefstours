@@ -5,55 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
-
-        .font-allura {
-            font-family: 'Allura', cursive;
-        }
-
-
-
-        @font-face {
-            font-family: 'CS Canela';
-            src: url('/src/font/canela/Canela Family/Canela-Light-Trial.otf') format('opentype');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-
-        @font-face {
-            font-family: 'General Sans';
-            src: url('/src/font/generalsans/GeneralSans_Complete/Fonts/OTF/GeneralSans-Regular.otf') format('opentype');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        .general-sans {
-            font-family: 'General Sans', sans-serif;
-        }
-
-
-
-        .canela {
-            font-family: 'CS Canela', sans-serif;
-            font-size: 48px;
-            font-weight: 400;
-            /* normal weight */
-            line-height: 57.6px;
-            text-align: center;
-        }
-
         .navbar-scrolled {
             background-color: #223B58;
 
         }
     </style>
-
     <!-- Start navbar -->
     <nav id="navbar"
         class="w-[1440px] h-[76px] z-50 px-[120px] py-4 bg-transparent fixed top-0 left-1/2 transform -translate-x-1/2 mx-auto transition-colors duration-300">
@@ -65,7 +27,6 @@
                     <img src="../src/img/logo.png" alt="logo">
                 </div>
                 <div>
-
                     <h4 class="font-allura font-normal text-[28px] text-white">Chefs Tours</h4>
                 </div>
             </div>
@@ -100,22 +61,27 @@
 
 
         <div
-            class="absolute top-0 flex-col  border left-0 bg-gradient-to-b from-black/60 via-black/30 to-transparent w-full h-full flex items-center justify-center">
-            <div class="border border-white flex-col gap-8 ">
+            class="absolute top-0 flex-col    left-0 bg-gradient-to-b from-black/60 via-black/30 to-transparent w-full h-full flex items-center justify-center">
+            <div class="  w-[590px] flex-col gap-8 ">
                 <div class="mx-auto">
-                    <p class="text-white text-4xl">Welcome to</p>
+                    <p class="text-white text-4xl text-center">Welcome to</p>
                 </div>
-                <div class="relative flex items-center mx-auto">
-                    <span class="absolute inset-y-0  transform -translate-x-0 flex items-center">
+                <div class="relative  my-8 flex items-center text-center mx-auto">
+                    <span class="absolute translate-x-14 ml-52 mb-20 transform flex items-center">
                         <img src="../src/img/logo-color.png" alt="Logo" class="w-12 h-12">
                     </span>
-                    <h4 class="font-allura font-normal text-[88px] leading-[88px] text-white">
+                    <h4 class="font-allura text-center mx-auto font-normal text-[88px] leading-[88px] text-white">
                         Chefs Tours
                     </h4>
                 </div>
 
                 <div class="">
-                    <p class="text-white">Enjoy culinary and beverage tours and experiences for Discerning public and
+                    <p class=" text-center text-lg font-normal fornt-general-sans leading-[26px] text-white">Enjoy
+                        culinary and
+                        beverage tours and
+                        experiences for
+                        Discerning
+                        public and
                         Hospitality Professionals.</p>
                 </div>
             </div>
@@ -274,7 +240,7 @@
 
     <!-- Section 3 -->
 
-    <div class="w-[1440px] mx-auto h-[1146px] p-20 flex flex-col gap-20 bg-gradient-to-t from-black/5  to-white">
+    <div class="w-[1440px] mx-auto h-[1146px] p-20 flex flex-col gap-20 bg-gradient-to-t from-blue-800/5  to-white">
         <div class="w-[792px] flex flex-col h-auto gap-6">
 
             <div class="font-normal text-5xl leading-[57.6px] font-cs-canela">
@@ -288,27 +254,120 @@
         </div>
 
 
-        <div class="w-[1200px] h-[618px] gap-6 flex border overflow-x-visible">
-            <div class="w-[384px]  min-h-[618px] gap-[21px] border">
-                <!-- Your content here -->
-            </div>
-            <div class="w-[384px] min-h-[618px] gap-[21px] border">
-                <!-- Your content here -->
-            </div>
-            <div class="w-[384px] min-h-[618px] gap-[21px] border">
-                <!-- Your content here -->
+        <div class="w-[1200px] h-[618px] gap-6 flex overflow-x-visible">
+            <div class="w-[384px]  flex  flex-col h-[618px] gap-[21px] ">
+                <div class="w-[384px]  h-[387px] rounded">
+                    <img src="/src/img/rect1.png" class="object-cover w-full h-full" alt="All">
+                </div>
+
+                <div class="flex h-[618px] relative flex-col gap-4">
+                    <div class="flex-col flex gap-4">
+
+                        <div class="font-normal text-sm  font-general-sans leading-5">CHEF TOUR OF</div>
+                        <div class="font-normal font-cs-canela text-4xl leading-[43px]">Alsace - Burgundy - Provence
+                        </div>
+                        <div class="font-normal text-xl font-general-sans leading-7">Alsace - Burgu13th Septermber ( 11
+                            Days)
+                        </div>
+
+                    </div>
+                    <div class="absolute bottom-0 left-0 flex items-center gap-2 ">
+                        <a href="#" class="font-general-sans text-xl font-normal text-[#3E7FB9] ">
+                            View Details
+                        </a>
+                        <img src="../src/img/icon/arrow-right 2.svg" alt="Arrow Right" class="w-6 h-6">
+                    </div>
+                </div>
+
             </div>
 
+            <div class="w-[384px]  flex  flex-col h-[618px] gap-[21px] ">
+                <div class="w-[384px]  h-[387px] rounded">
+                    <img src="/src/img/rect2.png" class="object-cover w-full h-full" alt="All">
+                </div>
+
+                <div class="flex h-[618px] relative flex-col gap-4">
+                    <div class="flex-col flex gap-4">
+
+                        <div class="font-normal text-sm  font-general-sans leading-5">CHEF TOUR OF</div>
+                        <div class="font-normal font-cs-canela text-4xl leading-[43px]">Loire Valley - Brittany -
+                            Bordeaux
+                        </div>
+                        <div class="font-normal text-xl font-general-sans leading-7">30th Septermber ( 11 Days )
+                        </div>
+
+                    </div>
+                    <div class="absolute bottom-0 left-0 flex items-center gap-2 ">
+                        <a href="#" class="font-general-sans text-xl font-normal text-[#3E7FB9] ">
+                            View Details
+                        </a>
+                        <img src="../src/img/icon/arrow-right 2.svg" alt="Arrow Right" class="w-6 h-6">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="w-[384px]  flex  flex-col h-[618px] gap-[21px] ">
+                <div class="w-[384px]  h-[387px] rounded">
+                    <img src="/src/img/rect3.png" class="object-cover w-full h-full" alt="All">
+                </div>
+
+                <div class="flex h-[618px] relative flex-col gap-4">
+                    <div class="flex-col flex gap-4">
+
+                        <div class="font-normal text-sm  font-general-sans leading-5">CHEF TOUR OF</div>
+                        <div class="font-normal font-cs-canela text-4xl leading-[43px]">South - West - Perigord
+                        </div>
+                        <div class="font-normal text-xl font-general-sans leading-7">13th Septermber ( 11 Days )
+                        </div>
+
+                    </div>
+                    <div class="absolute bottom-0 left-0 flex items-center gap-2 ">
+                        <a href="#" class="font-general-sans text-xl font-normal text-[#3E7FB9] ">
+                            View Details
+                        </a>
+                        <img src="../src/img/icon/arrow-right 2.svg" alt="Arrow Right" class="w-6 h-6">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="w-[384px]  flex  flex-col h-[618px] gap-[21px] ">
+                <div class="w-[384px]  h-[387px] rounded">
+                    <img src="/src/img/rect4.png" class="object-cover w-full h-full" alt="All">
+                </div>
+
+                <div class="flex h-[618px] relative flex-col gap-4">
+                    <div class="flex-col flex gap-4">
+
+                        <div class="font-normal text-sm  font-general-sans leading-5">CHEF TOUR OF</div>
+                        <div class="font-normal font-cs-canela text-4xl leading-[43px]">Provence & Cote D’Azur
+                        </div>
+                        <div class="font-normal text-xl font-general-sans leading-7">13th Septermber ( 7 Days )
+                        </div>
+
+                    </div>
+                    <div class="absolute bottom-0 left-0 flex items-center gap-2 ">
+                        <a href="#" class="font-general-sans text-xl font-normal text-[#3E7FB9] ">
+                            View Details
+                        </a>
+                        <img src="../src/img/icon/arrow-right 2.svg" alt="Arrow Right" class="w-6 h-6">
+                    </div>
+                </div>
+
+            </div>
         </div>
 
     </div>
     <!-- End Section 3 -->
 
 
-    <div class="w-[1440px] mx-auto  h-auto py-[120px] gap-12 flex flex-wrap">
+    <div class=" w-[1440px] mx-auto h-auto py-[120px] gap-12 flex flex-wrap">
         <div class="w-full min-h-[109px] gap-4 text-center flex flex-col">
-            <div class="font-normal text-5xl leading-[57.6px] font-cs-canela text-[#16263B]">Get in touch</div>
-            <div class="font-general-sans text-xl leading-[26px]">Contact Chefs Tours to get more information about our
+            <div class="font-normal text-5xl leading-[57.6px] font-cs-canela text-[#16263B]">Get in
+                touch</div>
+            <div class="font-general-sans text-xl leading-[26px]">Contact Chefs Tours to get more
+                information about our
                 restaurant
                 trip.</div>
         </div>
@@ -381,7 +440,7 @@
 
 
     <footer class="w-[1440px] min-h-[392px] mx-auto pt-12 px-32 pb-8 bg-[#223B58] text-white">
-        <div class="flex min-h-[216px] gap-10">
+        <div class="flex  min-h-[216px] gap-[129px] ">
             <!-- First Column -->
             <div class="flex-col flex gap-6  w-[384px]">
                 <div class="w-[150px] h-auto gap-2 flex">
@@ -393,11 +452,13 @@
                     </div>
                 </div>
                 <div class="text-sm leading-5 font-normal font-sans">
-                    Culinary and Beverage Tours and Experiences for Discerning Public and Hospitality Professionals.
+                    Culinary and Beverage Tours and Experiences for Discerning Public and Hospitality
+                    Professionals.
                 </div>
                 <div class="flex flex-col">
                     <div class="text-sm font-general-sans font-medium leading-5">Address Office</div>
-                    <div class="font-normal text-sm font-general-sans leading-5 text-medium">35 Selegie Road #10-01
+                    <div class="font-normal text-sm font-general-sans leading-5 text-medium">35 Selegie
+                        Road #10-01
                         Parklane
                         Shopping Mall
                         Singapore
@@ -406,44 +467,55 @@
             </div>
 
 
-            <div class="flex justify-between flex-grow">
+            <div class="flex justify-between gap-6 flex-grow">
 
-                <div class="w-[179px] h-[140px]">
-                    <h2 class="text-lg font-semibold mb-2">Contact Us</h2>
+                <div class="w-[179px] gap-4 flex flex-col h-[140px]">
+                    <h2 class="text-sm font-general-sans font-medium leading-5">Contact Us</h2>
                     <div class="flex flex-col">
-                        <div>Email :</div>
-                        <div>info@chefstour.com</div>
+                        <div class="text-sm font-general-sans font-medium leading-5">Email :</div>
+                        <div class="font-normal text-sm font-general-sans leading-5 text-medium">
+                            info@chefstour.com
+                        </div>
                     </div>
                     <div class="flex flex-col">
-                        <div>Telephone</div>
-                        <div>+61820930232</div>
+                        <div class="text-sm font-general-sans font-medium leading-5">Telephone</div>
+                        <div class="font-normal text-sm font-general-sans leading-5 text-medium">
+                            +61820930232</div>
                     </div>
                 </div>
 
                 <!-- Quick Links Column -->
-                <div class="w-[179px] h-[140px]">
-                    <h2 class="text-lg font-semibold mb-2">Quick Links</h2>
-                    <div><a href="#" class="text-white hover:underline">Home</a></div>
-                    <div><a href="#" class="text-white hover:underline">About</a></div>
-                    <div><a href="#" class="text-white hover:underline">Tour</a></div>
-                    <div><a href="#" class="text-white hover:underline">Contact Us</a></div>
+                <div class="w-[179px] gap-2 flex flex-col h-[140px]">
+                    <h2 class="text-sm font-general-sans font-medium leading-5">Quick Links</h2>
+                    <div><a href="#" class="font-normal text-sm font-general-sans leading-5 text-medium">Home</a>
+                    </div>
+                    <div><a href="#" class="font-normal text-sm font-general-sans leading-5 text-medium">About</a>
+                    </div>
+                    <div><a href="#" class="font-normal text-sm font-general-sans leading-5 text-medium">Tour</a>
+                    </div>
+                    <div><a href="#" class="font-normal text-sm font-general    -sans leading-5 text-medium">Contact
+                            Us</a>
+                    </div>
                 </div>
 
                 <!-- Social Media Column -->
-                <div class="w-[179px] h-[140px]">
-                    <h2 class="text-lg font-semibold mb-2">Social Media</h2>
+                <div class="w-[179px] gap-4 flex flex-col h-[140px]">
+                    <h2 class="text-sm font-general-sans font-medium leading-5">Social Media</h2>
                     <div>
-                        <a href="#" class="text-white hover:underline flex items-center">
+                        <a href="#"
+                            class="font-normal text-sm font-general-sans leading-5 text-medium flex items-center">
                             <img src="/src/img/instagram.png" alt="Instagram" class="w-5 h-5 mr-2">Instagram
                         </a>
                     </div>
                     <div>
-                        <a href="#" class="text-white hover:underline flex items-center">
+                        <a href="#"
+                            class="font-normal text-sm font-general-sans leading-5 text-medium flex items-center">
                             <img src="/src/img/facebook.png" alt="Facebook" class="w-5 h-5 mr-2">Facebook
                         </a>
                     </div>
                     <div>
-                        <a href="#" class="text-white hover:underline flex items-center">
+                        <a href="#"
+                            class="font-normal text-sm font-general-sans leading-5 text-medium flex items-center">
                             <img src="/src/img/youtube.png" alt="YouTube" class="w-5 h-5 mr-2">YouTube
                         </a>
                     </div>
@@ -451,7 +523,8 @@
             </div>
         </div>
         <div class="w-[1200px] border border-[#26517E] my-10"></div>
-        <div class="text-xs font-normal leading-4 font-general-sans ">Chef Tour ⓒ 2024 All Rights Reserved</div>
+        <div class="text-xs font-normal leading-4 font-general-sans ">Chef Tour ⓒ 2024 All Rights
+            Reserved</div>
     </footer>
 
     <script>
