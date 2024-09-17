@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./dist/*.{html,js}"],
+  content: [
+    "./src/**/*.{html,js}",  
+    "./dist/**/*.{html,js}"  
+  ],
   theme: {
     extend: {
       colors: {
@@ -9,6 +12,14 @@ module.exports = {
       },
       fontFamily: {
         'cs-canela': ['CS Canela', 'sans-serif'],
+      },
+      screens: {
+        xs: "480px",
+        sm: "600px",
+        md: "768px", // Ukuran standar untuk md
+        lg: "960px",
+        xl: "1280px",
+        "2xl": "1440px",
       },
     },
   },

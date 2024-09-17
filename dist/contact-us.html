@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+    <title>Chefs Tours | Homepage</title>
     <link href="./style.css" rel="stylesheet">
-    <title>Contact Us</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -19,96 +19,103 @@
     </style>
     <!-- Start navbar -->
     <nav id="navbar"
-        class="w-[1440px] h-[76px] z-50 px-[120px] py-4 bg-transparent fixed top-0 left-1/2 transform -translate-x-1/2 mx-auto transition-colors duration-300">
+        class="max-w-screen-2xl w-full h-20 z-50 px-32 py-4 bg-transparent fixed top-0 left-1/2 transform -translate-x-1/2 mx-auto transition-colors duration-300 flex items-center">
 
-        <div class="flex">
-
-            <div class="w-[150px] h-auto gap-2 flex">
-                <div>
-                    <img src="../src/img/logo.png" alt="logo">
-                </div>
-                <div>
-                    <h4 class="font-allura font-normal text-[28px] text-white">Chefs Tours</h4>
-                </div>
-            </div>
-            <div class="flex gap-3 w-64 h-9 mx-auto">
-                <div class="relative w-[66px] min-w-[66px] h-9 p-2 group">
-                    <h3 class="text-white font-normal text-sm leading-5">ABOUT</h3>
-                    <span
-                        class="absolute bottom-0 left-0 w-0 h-1 bg-white transition-all duration-300 group-hover:w-full"></span>
-                </div>
-                <div class="relative w-[66px] min-w-[66px] h-9 p-2 group">
-                    <h3 class="text-white font-normal text-sm leading-5">TOUR</h3>
-                    <span
-                        class="absolute bottom-0 left-0 w-0 h-1 bg-white transition-all duration-300 group-hover:w-full"></span>
-                </div>
-                <div class="relative w-auto min-w-[66px] h-9 p-2 group">
-                    <h3 class="text-white font-normal text-sm leading-5">CONTACT US</h3>
-                    <span
-                        class="absolute bottom-0 left-0 w-0 h-1 bg-white transition-all duration-300 group-hover:w-full"></span>
-                </div>
+        <div class="flex w-full justify-between items-center">
+            <!-- Logo and Title -->
+            <div class="flex items-center gap-2">
+                <img src="../src/img/logo.png" alt="logo" class="h-auto">
+                <h4 class="font-allura font-normal text-3xl text-white">Chefs Tours</h4>
             </div>
 
-            <div class="w-[134px] h-[44px] p-[12px] gap-[8px] border flex items-center justify-center">
+            <!-- Navigation Links -->
+            <div class="flex gap-3">
+                <!-- About Section -->
+                <a href="./contact-us.html"
+                    class="relative w-16 min-w-16 h-9 p-2 group flex items-center justify-center">
+                    <h3 class="text-white font-general-sans font-normal text-sm leading-5">ABOUT</h3>
+                    <span
+                        class="absolute bottom-0 left-0 w-full h-0.5 bg-white transition-all duration-300 transform scale-x-0 group-hover:scale-x-100 opacity-0 group-hover:opacity-100"></span>
+                </a>
+
+                <!-- Tour Section -->
+                <a href="./list-tour.html"
+                    class="relative w-16 min-w-16 h-9 p-2 group flex items-center justify-center">
+                    <h3 class="text-white font-general-sans font-normal text-sm leading-5">TOUR</h3>
+                    <span
+                        class="absolute bottom-0 left-0 w-full h-0.5 bg-white transition-all duration-300 transform scale-x-0 group-hover:scale-x-100 opacity-0 group-hover:opacity-100"></span>
+                </a>
+
+                <!-- Contact Us Section -->
+                <a href="./contact-us.html"
+                    class="relative w-auto min-w-16 h-9 p-2 group flex items-center justify-center">
+                    <h3 class="text-white font-general-sans font-normal text-sm leading-5">CONTACT US</h3>
+                    <span
+                        class="absolute bottom-0 left-0 w-full h-0.5 bg-white transition-all duration-300 transform scale-x-0 group-hover:scale-x-100 opacity-0 group-hover:opacity-100"></span>
+                </a>
+            </div>
+
+            <!-- Book Now Button -->
+            <a href="#book-now" class="w-36 h-11 p-3 border flex items-center justify-center">
                 <h4 class="text-white">BOOK NOW</h4>
-            </div>
+            </a>
         </div>
     </nav>
+
+
     <!-- End navbar -->
 
     <!-- Start Hero Section -->
-    <div class="relative w-[1440px] border h-[944px] mx-auto">
+    <div class="relative max-w-screen-2xl w-full  border mx-auto">
         <img src="../src/img/contact-us.png" alt="Gambar" class="w-full h-full object-cover">
 
 
         <div
-            class="absolute top-0 flex-col    left-0 bg-gradient-to-b from-black/60 via-black/30 to-transparent w-full h-full flex items-center justify-center">
-            <div class="  w-[590px] flex-col gap-8 ">
+            class="absolute top-0 flex-col  left-0 bg-gradient-to-b from-black/60 via-black/30 to-transparent w-full h-full flex items-center justify-center">
+            <div class="  max-w-xl w-full flex-col gap-8 ">
                 <div class="mx-auto">
-                    <p class="text-white text-[80px] font-cs-canela text-center">Contact Us</p>
+                    <p class="text-white font-cs-canela font-normal leading-10 text-7xl text-center">Contact Us</p>
                 </div>
             </div>
+
+
         </div>
 
     </div>
     <!-- End Hero Section -->
 
     <!-- Section 1 -->
-    <div class="w-[1440px]   p-[100px_120px_120px_120px] gap-8 mx-auto flex flex-col ">
+    <div class="max-w-screen-2xl w-full  p-24 gap-6 mx-auto flex flex-col">
         <!-- Text Section -->
-        <div class="mx-auto ">
-            <h3 class="text-[#26517E] text-center font-cs-canela font-normal text-5xl">
+        <div class="mx-auto  ">
+            <h3 class="text-[#26517E] text-center font-cs-canela font-normal text-6xl">
                 Our Office Location
             </h3>
         </div>
 
-        <div class="mx-auto w-[792px] h-[583]">
-            <img src="/src/img/maps.png" alt="">
+        <div class="max-w-4xl  w-full mx-auto">
+            <img class="object-cover w-full mx-auto" src="/src/img/maps.png" alt="">
         </div>
-
 
     </div>
     <!-- End Section 1 -->
 
 
-
-    <div class=" w-[1440px] mx-auto h-auto py-[120px] gap-12 flex flex-col">
-        <div class="w-[792px] min-h-[109px] gap-4 text-center mx-auto flex flex-col">
-            <div class="font-normal text-5xl leading-[57.6px] font-cs-canela text-[#16263B]">Express your interenst
-            </div>
-            <div class="font-general-sans text-xl text-center leading-[26px]">If you have any questions or are simply
-                curious about
+    <div class="max-w-screen-2xl  w-full mx-auto py-32 gap-12 flex flex-col">
+        <div class="max-w-4xl w-full mx-auto  gap-4 text-center flex flex-col">
+            <div class="font-normal text-5xl leading-tight font-cs-canela text-[#16263B]">Express your interenst</div>
+            <div class="font-general-sans text-xl leading-7">If you have any questions or are simply curious about
                 finding out more about Luštica Bay, fill in your details and our team will get in touch with you.</div>
         </div>
 
-        <div class="w-[588px] h-[530px] mx-auto p-4">
+        <div class="max-w-xl w-full mx-auto p-4 flex flex-col gap-4">
             <!-- Name Field -->
             <div class="mb-4">
                 <label for="name" class="block text-gray-700 text-sm font-medium mb-2">
                     Name <span class="text-red-500">*</span>
                 </label>
                 <input type="text" id="name" placeholder="Eg : Jack Daniel"
-                    class="w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-2">
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
             </div>
 
             <!-- Email Field -->
@@ -117,7 +124,7 @@
                     Email <span class="text-red-500">*</span>
                 </label>
                 <input type="email" id="email" placeholder="Eg : jack@email.com"
-                    class="w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-2">
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
             </div>
 
             <!-- Phone Number Field -->
@@ -128,17 +135,19 @@
                 <div class="flex items-center border border-gray-300 rounded-md">
                     <!-- Flag and Country Code Dropdown -->
                     <div class="flex items-center">
-                        <!-- SVG for Indonesia Flag -->
-                        <select id="country-code" class="px-2 py-2 border-0 focus:outline-none focus:ring-2">
-                            <option value="+62" selected> <!-- SVG for Indonesia Flag -->
-                                +62
+                        <select id="country-code"
+                            class="px-2 py-2 border-0 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option value="+62" selected>
+                                ID
                             </option>
-
                         </select>
+                    </div>
+                    <div class="font-normal text-base leading-4">
+                        +62
                     </div>
                     <!-- Phone Number Input -->
                     <input type="tel" id="phone" placeholder="8989123232"
-                        class="w-full px-3 py-2 border-0 rounded-r-md focus:outline-none focus:ring-2">
+                        class="w-full px-3 py-2 border-0 rounded-r-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                 </div>
             </div>
 
@@ -149,7 +158,7 @@
                 </label>
                 <input type="text" id="address"
                     placeholder="Eg : 6 Collyer Quay, #26-00 Income at Raffles, Singapore 049318"
-                    class="w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-2">
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
             </div>
 
             <!-- Message Field -->
@@ -158,102 +167,84 @@
                     Message
                 </label>
                 <textarea id="message" placeholder="Enter your message here" rows="4"
-                    class="w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-2"></textarea>
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
             </div>
 
-            <button type="submit" class="w-full bg-primary text-white px-4 py-2  focus:outline-none focus:ring-2">
+            <button type="submit"
+                class="w-full bg-[#3E7FB9] text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                 SEND ME MORE INFORMATION
             </button>
         </div>
     </div>
 
 
-    <footer class="w-[1440px] min-h-[392px] mx-auto pt-12 px-32 pb-8 bg-[#223B58] text-white">
-        <div class="flex  min-h-[216px] gap-[129px] ">
+
+    <footer class="max-w-screen-2xl  w-full h-96 mx-auto pt-12 px-32 gap-10 flex flex-col pb-8 bg-[#223B58] text-white">
+        <div class="flex min-h-52 gap-32">
             <!-- First Column -->
-            <div class="flex-col flex gap-6  w-[384px]">
-                <div class="w-[150px] h-auto gap-2 flex">
+            <div class="flex flex-col gap-6 w-96">
+                <div class="flex gap-2">
                     <div>
                         <img src="../src/img/logo.png" alt="logo">
                     </div>
                     <div>
-                        <h4 class="font-allura font-normal text-[28px] text-white">Chefs Tours</h4>
+                        <h4 class="font-allura font-normal text-3xl text-white">Chefs Tours</h4>
                     </div>
                 </div>
-                <div class="text-sm leading-5 font-normal font-sans">
+                <div class="text-sm leading-5 font-normal">
                     Culinary and Beverage Tours and Experiences for Discerning Public and Hospitality
                     Professionals.
                 </div>
                 <div class="flex flex-col">
-                    <div class="text-sm font-general-sans font-medium leading-5">Address Office</div>
-                    <div class="font-normal text-sm font-general-sans leading-5 text-medium">35 Selegie
-                        Road #10-01
-                        Parklane
-                        Shopping Mall
-                        Singapore
-                        (188307)</div>
+                    <div class="text-sm font-medium">Address Office</div>
+                    <div class="font-normal text-sm leading-5">
+                        35 Selegie Road <br> #10-01 <br> Parklane Shopping Mall <br> Singapore (188307)
+                    </div>
                 </div>
             </div>
 
-
             <div class="flex justify-between gap-6 flex-grow">
-
-                <div class="w-[179px] gap-4 flex flex-col h-[140px]">
-                    <h2 class="text-sm font-general-sans font-medium leading-5">Contact Us</h2>
+                <!-- Contact Us Column -->
+                <div class="w-44 gap-4 flex flex-col">
+                    <h2 class="text-sm font-medium leading-5">Contact Us</h2>
                     <div class="flex flex-col">
-                        <div class="text-sm font-general-sans font-medium leading-5">Email :</div>
-                        <div class="font-normal text-sm font-general-sans leading-5 text-medium">
-                            info@chefstour.com
-                        </div>
+                        <div class="text-sm font-medium">Email :</div>
+                        <div class="font-normal text-sm leading-5">info@chefstour.com</div>
                     </div>
                     <div class="flex flex-col">
-                        <div class="text-sm font-general-sans font-medium leading-5">Telephone</div>
-                        <div class="font-normal text-sm font-general-sans leading-5 text-medium">
-                            +61820930232</div>
+                        <div class="text-sm font-medium">Telephone</div>
+                        <div class="font-normal text-sm leading-5">+61820930232</div>
                     </div>
                 </div>
 
                 <!-- Quick Links Column -->
-                <div class="w-[179px] gap-2 flex flex-col h-[140px]">
-                    <h2 class="text-sm font-general-sans font-medium leading-5">Quick Links</h2>
-                    <div><a href="#" class="font-normal text-sm font-general-sans leading-5 text-medium">Home</a>
-                    </div>
-                    <div><a href="#" class="font-normal text-sm font-general-sans leading-5 text-medium">About</a>
-                    </div>
-                    <div><a href="#" class="font-normal text-sm font-general-sans leading-5 text-medium">Tour</a>
-                    </div>
-                    <div><a href="#" class="font-normal text-sm font-general    -sans leading-5 text-medium">Contact
-                            Us</a>
-                    </div>
+                <div class="w-44 gap-2 flex flex-col">
+                    <h2 class="text-sm font-medium leading-5">Quick Links</h2>
+                    <a href="#" class="font-normal text-sm leading-5">Home</a>
+                    <a href="#" class="font-normal text-sm leading-5">About</a>
+                    <a href="#" class="font-normal text-sm leading-5">Tour</a>
+                    <a href="#" class="font-normal text-sm leading-5">Contact Us</a>
                 </div>
 
                 <!-- Social Media Column -->
-                <div class="w-[179px] gap-4 flex flex-col h-[140px]">
-                    <h2 class="text-sm font-general-sans font-medium leading-5">Social Media</h2>
-                    <div>
-                        <a href="#"
-                            class="font-normal text-sm font-general-sans leading-5 text-medium flex items-center">
-                            <img src="/src/img/instagram.png" alt="Instagram" class="w-5 h-5 mr-2">Instagram
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#"
-                            class="font-normal text-sm font-general-sans leading-5 text-medium flex items-center">
-                            <img src="/src/img/facebook.png" alt="Facebook" class="w-5 h-5 mr-2">Facebook
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#"
-                            class="font-normal text-sm font-general-sans leading-5 text-medium flex items-center">
-                            <img src="/src/img/youtube.png" alt="YouTube" class="w-5 h-5 mr-2">YouTube
-                        </a>
-                    </div>
+                <div class="w-60 gap-4 flex flex-col">
+                    <h2 class="text-sm font-medium leading-5">Social Media</h2>
+                    <a href="#" class="font-normal text-sm leading-5 flex items-center">
+                        <img src="/src/img/instagram.png" alt="Instagram" class="w-5 h-5 mr-2">Instagram
+                    </a>
+                    <a href="#" class="font-normal text-sm leading-5 flex items-center">
+                        <img src="/src/img/facebook.png" alt="Facebook" class="w-5 h-5 mr-2">Facebook
+                    </a>
+                    <a href="#" class="font-normal text-sm leading-5 flex items-center">
+                        <img src="/src/img/youtube.png" alt="YouTube" class="w-5 h-5 mr-2">YouTube
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="w-[1200px] border border-[#26517E] my-10"></div>
-        <div class="text-xs font-normal leading-4 font-general-sans ">Chef Tour ⓒ 2024 All Rights
-            Reserved</div>
+
+        <div class="border-t border-[#26517E] "></div>
+
+        <div class="text-xs font-normal leading-4 text-start">Chef Tour ⓒ 2024 All Rights Reserved</div>
     </footer>
 
     <script>
