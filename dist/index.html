@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
-    <meta http-equiv="refresh" content="10"> <!-- Refresh every 3 seconds -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
             font-family: 'Allura', cursive;
         }
 
-        @import url('/src/font/canela/Canela Family/Canela-Regular-Trial.otf');
+
 
         @font-face {
             font-family: 'CS Canela';
@@ -25,7 +25,20 @@
             font-style: normal;
         }
 
-        /* In your CSS file */
+
+        @font-face {
+            font-family: 'General Sans';
+            src: url('/src/font/generalsans/GeneralSans_Complete/Fonts/OTF/GeneralSans-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .general-sans {
+            font-family: 'General Sans', sans-serif;
+        }
+
+
+
         .canela {
             font-family: 'CS Canela', sans-serif;
             font-size: 48px;
@@ -34,11 +47,16 @@
             line-height: 57.6px;
             text-align: center;
         }
+
+        .navbar-scrolled {
+            background-color: #223B58;
+
+        }
     </style>
 
     <!-- Start navbar -->
-    <nav
-        class="w-[1440px] h-[76px] z-50 px-[120px] py-4 bg-transparent fixed top-0 left-1/2 transform -translate-x-1/2 mx-auto">
+    <nav id="navbar"
+        class="w-[1440px] h-[76px] z-50 px-[120px] py-4 bg-transparent fixed top-0 left-1/2 transform -translate-x-1/2 mx-auto transition-colors duration-300">
 
         <div class="flex">
 
@@ -118,27 +136,329 @@
     </div>
     <!-- End Hero Section -->
 
-    <div class="w-[1440px] h-[944px]  p-[100px_120px_120px_120px] gap-[120px] mx-auto flex-col border">
-        <div class="mx-auto border">
-            <h3 class="text-[#26517E] text-center font-cs-canela font-normal text-[57.6px]">Welcome to Chef Tour, a
-                travel service
-                that offer an
-                unparalleled
-                experience of
-                Europe’s hidden
-                gems.
+    <!-- Section 1 -->
+    <div class="w-[1440px]  h-[944px] p-[100px_120px_120px_120px] gap-[120px] mx-auto flex flex-col ">
+        <!-- Text Section -->
+        <div class="mx-auto ">
+            <h3 class="text-[#26517E] text-center font-cs-canela font-normal text-[57.6px]">
+                Welcome to Chef Tour, a travel service that offers an unparalleled experience of Europe’s hidden gems.
             </h3>
         </div>
 
+        <div class="flex w-[1201px] h-[488px] gap-10  items-center">
+            <!-- Image Box -->
+            <div class="">
+                <img class="w-full h-full object-cover" src="/src/img/image1.png" alt="Image">
+            </div>
 
-        <div class="flex w-[1201px] h-[488px]">
-            <div><img src="/src/img/image1.png" alt=""></div>
-            <div></div>
+            <div class="w-[592px] h-[438px]  flex flex-col gap-12 ml-auto">
+                <div class="w-full relative h-full flex flex-col gap-5">
+                    <div class="text-[#26517E] text-left font-cs-canela font-normal text-5xl">
+                        About Chefs Tour
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <p class=" font-general-sans font-normal text-lg leading-[26px]">
+                            Founded in 2005 by travel enthusiasts Chef Romain Bapst and Mr Martin O'Dee, our boutique
+                            tours offer an unparalleled experience of Europe's hidden gems. With a maximum of 8 guests
+                            per tour, we ensure personalised service and exclusive access to unique culinary and
+                            cultural experiences. Romain, an acclaimed executive chef, crafts bespoke itineraries, while
+                            Martin's expertise in wine and spirits enriches each journey.
+                        </p>
+                        <p class=" font-general-sans font-normal text-lg leading-[26px]">
+                            Explore Europe's culture, cuisine, and wines with our expert travel planners and guides,
+                            dedicated to creating unforgettable memories.
+                        </p>
+                    </div>
 
+                    <button
+                        class="w-[155px] h-[52px]  px-[32px] py-[16px] gap-[8px] rounded-sm font-medium text-sm leading-5  border-2 absolute bottom-0 left-0 forn-general-sans border-primary bg-transparent text-[#3E7FB9]">
+                        READ MORE
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- End Section 1 -->
+
+    <!-- Section 2 -->
+    <div class="w-[1440px]  overflow-hidden  p-[120px] flex flex-col gap-20 h-[894px] bg-[#26517E] mx-auto">
+
+        <div class="w-[1200px] flex min-h-[100px] gap-6 items-center">
+            <div class="w-[1040px] min-h-[100px] flex flex-col gap-4">
+                <div class="font-normal text-5xl leading-[57.6px] font-cs-canela text-white">
+                    Our Memories
+                </div>
+
+                <div class="text-white text-lg font-normal font-general-sans">
+                    We promoted our first trip nearly two decades ago, 2005. People are still talking about it!
+                </div>
+            </div>
+            <div class="w-[136px] h-14 flex items-center justify-center gap-6">
+                <div class="w-14 h-14 rounded-full border border-white flex items-center justify-center">
+                    <img src="/src/img/icon/arrow-left.svg" alt="Arrow Left" class="w-6 h-6">
+                </div>
+                <div class="w-14 h-14 rounded-full border border-white flex items-center justify-center">
+                    <img src="/src/img/icon/arrow-right.svg" alt="Arrow Right" class="w-6 h-6">
+                </div>
+            </div>
+        </div>
+
+        <div class="relative w-full  min-h-[474px] overflow-x-visible">
+            <!-- Container to hold content that overflows -->
+            <div class="absolute left-0 flex gap-6">
+                <div class="w-[486px] snap-start   min-h-[450px] flex flex-col gap-8">
+                    <div class="w-full h-[250px] overflow-hidden">
+                        <img src="/src/img/image 2.png" alt="Image" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex flex-col gap-5 p-4">
+                        <div class="text-4xl font-cs-canela text-white font-normal leading-[48px]">
+                            First day of our tour
+                        </div>
+                        <div class="font-normal font-general-sans text-white">
+                            We start our first tour over 15 years ago
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[486px] snap-start   min-h-[450px] flex flex-col gap-8">
+                    <div class="w-full h-[250px] overflow-hidden">
+                        <img src="/src/img/image 4.png" alt="Image" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex flex-col gap-5 p-4">
+                        <div class="text-4xl font-cs-canela text-white font-normal leading-[48px]">
+                            First day of our tour
+                        </div>
+                        <div class="font-normal font-general-sans text-white">
+                            We start our first tour over 15 years ago
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[486px] snap-start   min-h-[450px] flex flex-col gap-8">
+                    <div class="w-full h-[250px] overflow-hidden">
+                        <img src="/src/img/image 3.png" alt="Image" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex flex-col gap-5 p-4">
+                        <div class="text-4xl font-cs-canela text-white font-normal leading-[48px]">
+                            Private tour
+                        </div>
+                        <div class="font-normal font-general-sans text-white">
+                            Private tour of Moet and Chandon grounds (something that is not available on normal tours).
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[486px] snap-start   min-h-[450px] flex flex-col gap-8">
+                    <div class="w-full h-[250px] overflow-hidden">
+                        <img src="/src/img/image 2.png" alt="Image" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex flex-col gap-5 p-4">
+                        <div class="text-4xl font-cs-canela text-white font-normal leading-[48px]">
+                            Private testing wine
+                        </div>
+                        <div class="font-normal font-general-sans text-white">
+                            Private tour of Moet and Chandon grounds (something that is not available on normal tours).
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!-- End Section 2 -->
+
+
+    <!-- Section 3 -->
+
+    <div class="w-[1440px] mx-auto h-[1146px] p-20 flex flex-col gap-20 bg-gradient-to-t from-black/5  to-white">
+        <div class="w-[792px] flex flex-col h-auto gap-6">
+
+            <div class="font-normal text-5xl leading-[57.6px] font-cs-canela">
+                Current Tours 2024
+            </div>
+            <div class="text-lg font-normal font-general-sans">
+                Guests are taken on a uniquely extravagant
+                French culinary journey with insider access to Michelin Star
+                Chefs, bespoke experiences and luxury 5 star hotels matched with food and wine that is second to none
+            </div>
+        </div>
+
+
+        <div class="w-[1200px] h-[618px] gap-6 flex border overflow-x-visible">
+            <div class="w-[384px]  min-h-[618px] gap-[21px] border">
+                <!-- Your content here -->
+            </div>
+            <div class="w-[384px] min-h-[618px] gap-[21px] border">
+                <!-- Your content here -->
+            </div>
+            <div class="w-[384px] min-h-[618px] gap-[21px] border">
+                <!-- Your content here -->
+            </div>
+
+        </div>
+
+    </div>
+    <!-- End Section 3 -->
+
+
+    <div class="w-[1440px] mx-auto  h-auto py-[120px] gap-12 flex flex-wrap">
+        <div class="w-full min-h-[109px] gap-4 text-center flex flex-col">
+            <div class="font-normal text-5xl leading-[57.6px] font-cs-canela text-[#16263B]">Get in touch</div>
+            <div class="font-general-sans text-xl leading-[26px]">Contact Chefs Tours to get more information about our
+                restaurant
+                trip.</div>
+        </div>
+
+        <div class="w-[588px] h-[530px] mx-auto p-4">
+            <!-- Name Field -->
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700 text-sm font-medium mb-2">
+                    Name <span class="text-red-500">*</span>
+                </label>
+                <input type="text" id="name" placeholder="Eg : Jack Daniel"
+                    class="w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-2">
+            </div>
+
+            <!-- Email Field -->
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 text-sm font-medium mb-2">
+                    Email <span class="text-red-500">*</span>
+                </label>
+                <input type="email" id="email" placeholder="Eg : jack@email.com"
+                    class="w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-2">
+            </div>
+
+            <!-- Phone Number Field -->
+            <div class="mb-4">
+                <label for="phone" class="block text-gray-700 text-sm font-medium mb-2">
+                    Phone Number <span class="text-red-500">*</span>
+                </label>
+                <div class="flex items-center border border-gray-300 rounded-md">
+                    <!-- Flag and Country Code Dropdown -->
+                    <div class="flex items-center">
+                        <!-- SVG for Indonesia Flag -->
+                        <select id="country-code" class="px-2 py-2 border-0 focus:outline-none focus:ring-2">
+                            <option value="+62" selected> <!-- SVG for Indonesia Flag -->
+                                +62
+                            </option>
+
+                        </select>
+                    </div>
+                    <!-- Phone Number Input -->
+                    <input type="tel" id="phone" placeholder="8989123232"
+                        class="w-full px-3 py-2 border-0 rounded-r-md focus:outline-none focus:ring-2">
+                </div>
+            </div>
+
+            <!-- Address Field -->
+            <div class="mb-4">
+                <label for="address" class="block text-gray-700 text-sm font-medium mb-2">
+                    Address <span class="text-red-500">*</span>
+                </label>
+                <input type="text" id="address"
+                    placeholder="Eg : 6 Collyer Quay, #26-00 Income at Raffles, Singapore 049318"
+                    class="w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-2">
+            </div>
+
+            <!-- Message Field -->
+            <div class="mb-4">
+                <label for="message" class="block text-gray-700 text-sm font-medium mb-2">
+                    Message
+                </label>
+                <textarea id="message" placeholder="Enter your message here" rows="4"
+                    class="w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-2"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-primary text-white px-4 py-2  focus:outline-none focus:ring-2">
+                SEND ME MORE INFORMATION
+            </button>
         </div>
     </div>
 
 
+    <footer class="w-[1440px] min-h-[392px] mx-auto pt-12 px-32 pb-8 bg-[#223B58] text-white">
+        <div class="flex min-h-[216px] gap-10">
+            <!-- First Column -->
+            <div class="flex-col flex gap-6  w-[384px]">
+                <div class="w-[150px] h-auto gap-2 flex">
+                    <div>
+                        <img src="../src/img/logo.png" alt="logo">
+                    </div>
+                    <div>
+                        <h4 class="font-allura font-normal text-[28px] text-white">Chefs Tours</h4>
+                    </div>
+                </div>
+                <div class="text-sm leading-5 font-normal font-sans">
+                    Culinary and Beverage Tours and Experiences for Discerning Public and Hospitality Professionals.
+                </div>
+                <div class="flex flex-col">
+                    <div class="text-sm font-general-sans font-medium leading-5">Address Office</div>
+                    <div class="font-normal text-sm font-general-sans leading-5 text-medium">35 Selegie Road #10-01
+                        Parklane
+                        Shopping Mall
+                        Singapore
+                        (188307)</div>
+                </div>
+            </div>
+
+
+            <div class="flex justify-between flex-grow">
+
+                <div class="w-[179px] h-[140px]">
+                    <h2 class="text-lg font-semibold mb-2">Contact Us</h2>
+                    <div class="flex flex-col">
+                        <div>Email :</div>
+                        <div>info@chefstour.com</div>
+                    </div>
+                    <div class="flex flex-col">
+                        <div>Telephone</div>
+                        <div>+61820930232</div>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="w-[179px] h-[140px]">
+                    <h2 class="text-lg font-semibold mb-2">Quick Links</h2>
+                    <div><a href="#" class="text-white hover:underline">Home</a></div>
+                    <div><a href="#" class="text-white hover:underline">About</a></div>
+                    <div><a href="#" class="text-white hover:underline">Tour</a></div>
+                    <div><a href="#" class="text-white hover:underline">Contact Us</a></div>
+                </div>
+
+                <!-- Social Media Column -->
+                <div class="w-[179px] h-[140px]">
+                    <h2 class="text-lg font-semibold mb-2">Social Media</h2>
+                    <div>
+                        <a href="#" class="text-white hover:underline flex items-center">
+                            <img src="/src/img/instagram.png" alt="Instagram" class="w-5 h-5 mr-2">Instagram
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="text-white hover:underline flex items-center">
+                            <img src="/src/img/facebook.png" alt="Facebook" class="w-5 h-5 mr-2">Facebook
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="text-white hover:underline flex items-center">
+                            <img src="/src/img/youtube.png" alt="YouTube" class="w-5 h-5 mr-2">YouTube
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-[1200px] border border-[#26517E] my-10"></div>
+        <div class="text-xs font-normal leading-4 font-general-sans ">Chef Tour ⓒ 2024 All Rights Reserved</div>
+    </footer>
+
+    <script>
+        document.addEventListener('scroll', () => {
+            document.getElementById('navbar').classList.toggle('navbar-scrolled', window.scrollY > 50);
+        });
+    </script>
 </body>
 
 </html>
