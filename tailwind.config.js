@@ -13,6 +13,7 @@ module.exports = {
       fontFamily: {
         'cs-canela': ['CS Canela', 'sans-serif'],
         'general-sans': ['General Sans', 'sans-serif'],
+        'inter': ['Inter', 'sans-serif'],
       },
       screens: {
         xs: "480px",
