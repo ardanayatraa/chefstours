@@ -19,16 +19,27 @@
 
     <!-- Start navbar -->
     <nav id="navbar"
-        class="md:max-w-screen-2xl w-full h-14 sm:h-20 z-50 md:px-32 px-4 py-4 bg-transparent fixed top-0 left-1/2 transform -translate-x-1/2 mx-auto transition-colors duration-300 flex items-center">
+        class="md:max-w-screen-2xl w-full h-14 sm:h-20 z-50 md:px-32 px-4 py-4 bg-[#223B58] md:bg-transparent fixed top-0 left-1/2 transform -translate-x-1/2 mx-auto transition-colors duration-300 flex items-center">
         <div class="flex w-full justify-between items-center">
-            <!-- Ukuran dan warna berbeda -->
-            <div id="hamburger-menu" class="hamburger-menu md:hidden">
-                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
-                    </path>
+            <div id="hamburger-menu" class="cursor-pointer flex md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
+
             </div>
+
+            <div id="wrapper"
+                class="hidden absolute  md:hidden top-full left-0  bg-[#223B58] text-white w-full p-4 shadow-lg">
+                <div class="gap-4 flex flex-col">
+                    <a class="font-general-sans font-normal leading-5" href="">ABOUT</a>
+                    <a class="font-general-sans font-normal leading-5" href="">TOUR</a>
+                    <a class="font-general-sans font-normal leading-5" href="">CONTACT US</a>
+                </div>
+            </div>
+
+
 
             <!-- Logo and Title -->
             <div class="flex mx-auto md:mx-0 items-center gap-2">
@@ -574,6 +585,12 @@
     <script>
         document.addEventListener('scroll', () => {
             document.getElementById('navbar').classList.toggle('navbar-scrolled', window.scrollY > 50);
+        });
+
+        document.getElementById('hamburger-menu').addEventListener('click', function () {
+            var wrapper = document.getElementById('wrapper');
+            wrapper.classList.toggle('hidden');
+            wrapper.classList.toggle('block');
         });
     </script>
 </body>
