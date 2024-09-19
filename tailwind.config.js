@@ -15,14 +15,6 @@ module.exports = {
         'general-sans': ['General Sans', 'sans-serif'],
         'inter': ['Inter', 'sans-serif'],
       },
-      screens: {
-        xs: "480px",
-        sm: "600px",
-        md: "768px", 
-        lg: "960px",
-        xl: "1280px",
-        "2xl": "1440px",
-      },
       plugins: [
         require('flowbite/plugin')
     ]
