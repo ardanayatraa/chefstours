@@ -103,11 +103,95 @@
     </div>
     <!-- End Hero Section -->
 
+    <!-- Section 1 -->
+    <div class="w-full  mx-auto flex flex-col py-32 px-36">
+        <!-- Header Section -->
+        <div class="mx-auto text-center md:max-w-7xl px-4 sm:px-0">
+            <h3 class="text-[#26517E] font-cs-canela font-normal text-4xl sm:text-5xl lg:text-6xl">
+                Experience the culinary lifestyle at Chef Tour, where a wide array of tour and events await you
+                throughout the year.
+            </h3>
+        </div>
+
+        <div class="border w-full gap-12">
+            <div class="flex space-x-4">
+                <!-- Date Input (Month Picker) -->
+                <div class="relative flex-1">
+                    <label for="date" class="block mb-2 text-sm font-medium">Date [Month]</label>
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500">📅</span>
+                    <input type="month" id="date" name="date"
+                        class="w-full h-12 pl-10 rounded-sm border border-gray-300 p-2" />
+                </div>
+
+                <!-- Location Dropdown -->
+                <div class="relative flex-1">
+                    <label for="location" class="block mb-2 text-sm font-medium">Location</label>
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500">0</span>
+                    <select id="location" name="location"
+                        class="w-full h-12 pl-10 rounded-sm border border-gray-300 p-2">
+                        <option value="">Select location</option>
+                        <option value="New York">New York</option>
+                        <option value="Tokyo">Tokyo</option>
+                        <option value="London">London</option>
+                        <option value="Paris">Paris</option>
+                    </select>
+                </div>
+
+                <!-- Duration Dropdown -->
+                <div class="relative flex-1">
+                    <label for="duration" class="block mb-2 text-sm font-medium">Duration</label>
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500">⏳</span>
+                    <select id="duration" name="duration"
+                        class="w-full h-12 pl-10 rounded-sm border border-gray-300 p-2">
+                        <option value="">Select duration</option>
+                        <option value="1">1 Day</option>
+                        <option value="3">3 Days</option>
+                        <option value="7">1 Week</option>
+                        <option value="30">1 Month</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+        <div class=" gap-6 overflow-x-auto flex no-scrollbar">
+            <!-- Tour Items (Repeat as needed) -->
+            <div class="md:w-96 w-40 flex flex-col gap-6 flex-shrink-0">
+                <div class="md:w-96 w-44 md:h-96 rounded">
+                    <img src="/src/img/rect1.png" class="object-cover w-full h-full" alt="All">
+                </div>
+                <div class="flex h-48 md:h-56 relative flex-col gap-4">
+                    <div class="flex-col flex gap-4">
+                        <div class="font-normal text-xs md:text-sm font-inter leading-5">CHEF TOUR OF</div>
+                        <div class="font-normal font-cs-canela text-xl md:text-4xl leading-7 md:leading-10">Alsace -
+                            Burgundy - Provence</div>
+                        <div class="font-normal text-sm md:text-xl font-inter leading-7">13th September (11 Days)
+                        </div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 flex items-center gap-2">
+                        <a href="#" class="font-inter text-lg md:text-xl font-normal text-[#3E7FB9]">
+                            View Details
+                        </a>
+                        <img src="../src/img/icon/arrow-right 2.svg" alt="Arrow Right" class="w-5 h-5 md:w-6 md:h-6">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+    <div>
+
+    </div>
+
     <footer
         class="w-full  mx-auto pt-12 px-6 sm:px-12 md:px-20 lg:px-32 gap-8 md:gap-10 flex flex-col pb-8 bg-[#223B58] text-white">
-        <div class="flex flex-col  md:flex-row gap-10 md:gap-32">
+        <div class="flex flex-col   md:flex-row gap-10 md:gap-80">
             <!-- First Column -->
-            <div class="flex flex-col gap-6 w-full md:w-96">
+            <div class="flex flex-col  gap-6 w-full md:max-w-xl">
                 <div class="flex gap-2">
                     <div>
                         <img src="../src/img/logo.png" alt="logo">
@@ -129,7 +213,7 @@
             </div>
 
             <!-- Contact Us, Quick Links, Social Media Columns -->
-            <div class="grid grid-cols-2   sm:grid-cols-2 lg:grid-cols-3 gap-y-6">
+            <div class="grid grid-cols-2   w-full md:max-w-3xl sm:grid-cols-2 lg:grid-cols-3 gap-y-6">
 
                 <!-- Contact Us Column -->
                 <div class="w-40  md:w-44 gap-4 flex  flex-col">
