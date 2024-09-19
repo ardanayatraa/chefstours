@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Chefs Tours | Homepage</title>
+    <link href="./style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <style>
+        .navbar-scrolled {
+            background-color: #223B58;
+        }
+    </style>
+
+    <!-- Start navbar -->
+    <nav id="navbar"
+        class=" w-full h-14 sm:h-20 z-50 md:px-32 px-4 py-4 bg-[#223B58] md:bg-transparent fixed top-0 left-1/2 transform -translate-x-1/2 mx-auto transition-colors duration-300 flex items-center">
+        <div class="flex w-full justify-between items-center">
+            <div id="hamburger-menu" class="cursor-pointer flex md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+
+            </div>
+
+            <div id="wrapper"
+                class="hidden absolute  md:hidden top-full left-0 bg-[#223B58] text-white w-full p-4 shadow-lg">
+                <div class="gap-4 flex flex-col">
+                    <a class="font-inter font-normal leading-5" href="">ABOUT</a>
+                    <a class="font-inter font-normal leading-5" href="">TOUR</a>
+                    <a class="font-inter font-normal leading-5" href="">CONTACT US</a>
+                </div>
+            </div>
+
+
+
+            <!-- Logo and Title -->
+            <a href="/dist/" class="flex mx-auto md:mx-0 items-center gap-2">
+                <img src="../src/img/logo.png" alt="logo" class="h-auto w-6">
+                <h4 class="font-allura font-normal text-3xl text-white">Chefs Tours</h4>
+            </a>
+
+
+            <!-- Navigation Links -->
+            <div class=" hidden md:flex gap-3">
+                <!-- About Section -->
+                <a href="./about-us.html" class="relative w-16 min-w-16 h-9 p-2 group flex items-center justify-center">
+                    <h3 class="text-white font-inter font-normal text-sm leading-5">ABOUT</h3>
+                    <span
+                        class="absolute bottom-0 left-0 w-full h-0.5 bg-white transition-all duration-300 transform scale-x-0 group-hover:scale-x-100 opacity-0 group-hover:opacity-100"></span>
+                </a>
+
+                <!-- Tour Section -->
+                <a href="./list-tour.html"
+                    class="relative w-16 min-w-16 h-9 p-2 group flex items-center justify-center">
+                    <h3 class="text-white font-inter font-normal text-sm leading-5">TOUR</h3>
+                    <span
+                        class="absolute bottom-0 left-0 w-full h-0.5 bg-white transition-all duration-300 transform scale-x-0 group-hover:scale-x-100 opacity-0 group-hover:opacity-100"></span>
+                </a>
+
+                <!-- Contact Us Section -->
+                <a href="./contact-us.html"
+                    class="relative w-auto min-w-16 h-9 p-2 group flex items-center justify-center">
+                    <h3 class="text-white font-inter font-normal text-sm leading-5">CONTACT US</h3>
+                    <span
+                        class="absolute bottom-0 left-0 w-full h-0.5 bg-white transition-all duration-300 transform scale-x-0 group-hover:scale-x-100 opacity-0 group-hover:opacity-100"></span>
+                </a>
+            </div>
+
+            <!-- Book Now Button -->
+            <a href="#book-now"
+                class="sm:w-36 sm:h-11 p-4 w-32 h-8 rounded-sm  border flex items-center justify-center">
+                <h4 class="text-white">BOOK NOW</h4>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Start Hero Section -->
+    <div class="relative w-full h-screen mx-auto">
+        <img src="../src/img/hero-list-tour.png" alt="Gambar" class="w-full h-full object-cover">
+        <div
+            class="absolute top-0 flex-col left-0 bg-gradient-to-b from-black/60 via-black/30 to-transparent w-full h-full flex items-center justify-center">
+            <div class="w-full flex-col gap-6 sm:gap-8">
+                <div class="mx-auto">
+                    <p class="text-white font-cs-canela  font-normal leading-10 text-5xl md:text-8xl text-center">Our
+                        Tour Service</p>
+                </div>
+            </div>
+
+            <!-- Vertical Divider Line -->
+            <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-28 md:h-44 border-l border-white">
+            </div>
+
+        </div>
+    </div>
+    <!-- End Hero Section -->
+
+    <footer
+        class="w-full  mx-auto pt-12 px-6 sm:px-12 md:px-20 lg:px-32 gap-8 md:gap-10 flex flex-col pb-8 bg-[#223B58] text-white">
+        <div class="flex flex-col  md:flex-row gap-10 md:gap-32">
+            <!-- First Column -->
+            <div class="flex flex-col gap-6 w-full md:w-96">
+                <div class="flex gap-2">
+                    <div>
+                        <img src="../src/img/logo.png" alt="logo">
+                    </div>
+                    <div>
+                        <h4 class="font-allura font-normal text-2xl sm:text-3xl text-white">Chefs Tours</h4>
+                    </div>
+                </div>
+                <div class="text-sm leading-5 font-normal">
+                    Culinary and Beverage Tours and Experiences for Discerning Public and Hospitality
+                    Professionals.
+                </div>
+                <div class="flex flex-col">
+                    <div class="text-sm font-medium">Address Office</div>
+                    <div class="font-normal text-sm leading-5">
+                        35 Selegie Road <br> #10-01 <br> Parklane Shopping Mall <br> Singapore (188307)
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Us, Quick Links, Social Media Columns -->
+            <div class="grid grid-cols-2   sm:grid-cols-2 lg:grid-cols-3 gap-y-6">
+
+                <!-- Contact Us Column -->
+                <div class="w-40  md:w-44 gap-4 flex  flex-col">
+                    <h2 class="text-sm font-medium leading-5">Contact Us</h2>
+                    <div class="flex flex-col">
+                        <div class="text-sm font-medium">Email :</div>
+                        <div class="font-normal text-sm leading-5">info@chefstour.com</div>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="text-sm font-medium">Telephone</div>
+                        <div class="font-normal text-sm leading-5">+61820930232</div>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="w-40 md:w-44  gap-2 flex flex-col">
+                    <h2 class="text-sm font-medium leading-5">Quick Links</h2>
+                    <a href="#" class="font-normal text-sm leading-5">Home</a>
+                    <a href="#" class="font-normal text-sm leading-5">About</a>
+                    <a href="#" class="font-normal text-sm leading-5">Tour</a>
+                    <a href="#" class="font-normal text-sm leading-5">Contact Us</a>
+                </div>
+
+                <!-- Social Media Column -->
+                <div class="w-40 md:w-60 gap-4  flex flex-col">
+                    <h2 class="text-sm font-medium leading-5">Social Media</h2>
+                    <a href="#" class="font-normal text-sm leading-5 flex items-center">
+                        <img src="/src/img/instagram.png" alt="Instagram" class="w-5 h-5 mr-2">Instagram
+                    </a>
+                    <a href="#" class="font-normal text-sm leading-5 flex items-center">
+                        <img src="/src/img/facebook.png" alt="Facebook" class="w-5 h-5 mr-2">Facebook
+                    </a>
+                    <a href="#" class="font-normal text-sm leading-5 flex items-center">
+                        <img src="/src/img/youtube.png" alt="YouTube" class="w-5 h-5 mr-2">YouTube
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="border-t border-[#26517E] "></div>
+
+        <div class="text-xs font-normal leading-4 text-start ">Chef Tour ⓒ 2024 All Rights Reserved</div>
+    </footer>
+
+    <script>
+        document.addEventListener('scroll', () => {
+            document.getElementById('navbar').classList.toggle('navbar-scrolled', window.scrollY > 50);
+        });
+
+        document.getElementById('hamburger-menu').addEventListener('click', function () {
+            var wrapper = document.getElementById('wrapper');
+            wrapper.classList.toggle('hidden');
+            wrapper.classList.toggle('block');
+        });
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+</body>
+
+</html>
