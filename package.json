@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "powershell -Command \"Copy-Item -Path 'src/img' -Destination 'dist/img' -Recurse -Force\" && tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
     "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +11,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "cpy-cli": "^5.0.0",
     "tailwindcss": "^3.4.11"
   },
   "dependencies": {
