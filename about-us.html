@@ -1,0 +1,764 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Chefs Tours | Homepage</title>
+    <link href="./style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <style>
+        .navbar-scrolled {
+            background-color: #223B58;
+        }
+    </style>
+
+    <!-- Start navbar -->
+    <nav id="navbar"
+        class="w-full h-14 sm:h-20 z-50 md:px-32 px-4 py-4 bg-[#223B58] md:bg-transparent fixed top-0 left-1/2 transform -translate-x-1/2 mx-auto transition-colors duration-300 flex items-center">
+        <div class="flex w-full justify-between items-center">
+            <div id="hamburger-menu" class="cursor-pointer flex md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+
+            </div>
+
+            <div id="wrapper"
+                class="hidden absolute  md:hidden top-full left-0 bg-[#223B58] text-white w-full p-4 shadow-lg">
+                <div class="gap-4 flex flex-col">
+                    <a class="font-inter font-normal leading-5" href="./about-us.html">ABOUT</a>
+                    <a class="font-inter font-normal leading-5" href="./list-tour.html">TOUR</a>
+                    <a class="font-inter font-normal leading-5" href="./contact-us.html">CONTACT US</a>
+                </div>
+            </div>
+
+
+            <!-- Logo and Title -->
+            <a href="./" class="flex mx-auto md:mx-0 items-center gap-2">
+                <img src="img/logo.png" alt="logo" class="h-auto w-6">
+                <h4 class="font-allura font-normal text-3xl text-white">Chefs Tours</h4>
+            </a>
+
+
+            <!-- Navigation Links -->
+            <div class=" hidden md:flex gap-3">
+                <!-- About Section -->
+                <a href="./about-us.html" class="relative w-16 min-w-16 h-9 p-2 group flex items-center justify-center">
+                    <h3 class="text-white font-inter font-normal text-sm leading-5">ABOUT</h3>
+                    <span
+                        class="absolute bottom-0 left-0 w-full h-0.5 bg-white transition-all duration-300 transform scale-x-0 group-hover:scale-x-100 opacity-0 group-hover:opacity-100"></span>
+                </a>
+
+                <!-- Tour Section -->
+                <a href="./list-tour.html"
+                    class="relative w-16 min-w-16 h-9 p-2 group flex items-center justify-center">
+                    <h3 class="text-white font-inter font-normal text-sm leading-5">TOUR</h3>
+                    <span
+                        class="absolute bottom-0 left-0 w-full h-0.5 bg-white transition-all duration-300 transform scale-x-0 group-hover:scale-x-100 opacity-0 group-hover:opacity-100"></span>
+                </a>
+
+                <!-- Contact Us Section -->
+                <a href="./contact-us.html"
+                    class="relative w-auto min-w-16 h-9 p-2 group flex items-center justify-center">
+                    <h3 class="text-white font-inter font-normal text-sm leading-5">CONTACT US</h3>
+                    <span
+                        class="absolute bottom-0 left-0 w-full h-0.5 bg-white transition-all duration-300 transform scale-x-0 group-hover:scale-x-100 opacity-0 group-hover:opacity-100"></span>
+                </a>
+            </div>
+
+            <!-- Book Now Button -->
+            <a href="#book-now"
+                class="sm:w-36 sm:h-11 p-4 w-32 h-8 rounded-sm  border flex items-center justify-center">
+                <h4 class="text-white">BOOK NOW</h4>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Start Hero Section -->
+    <div class="relative w-full h-screen mx-auto">
+        <img src="img/aboutus.png" alt="Gambar" class="w-full h-full object-cover">
+        <div
+            class="absolute top-0 flex-col left-0 bg-gradient-to-b from-black/60 via-black/30 to-transparent w-full h-full flex items-center justify-center">
+            <div class="sm:max-w-xl w-full flex-col gap-6 sm:gap-8">
+                <div class="mx-auto">
+                    <p class="text-white font-cs-canela  font-normal leading-10 text-5xl md:text-8xl text-center">About
+                        Us</p>
+                </div>
+            </div>
+
+            <!-- Vertical Divider Line -->
+            <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-28 md:h-44 border-l border-white">
+            </div>
+
+        </div>
+    </div>
+    <!-- End Hero Section -->
+
+
+
+    <div class="w-full mt-12 mb-9 sm:mt-16  sm:mb-12 p-4 sm:p-8 lg:p-12 lg:gap-32 mx-auto flex flex-col gap-12">
+        <!-- Header Section -->
+        <div class="mx-auto text-center px-4 sm:px-0">
+            <h3 class="text-[#26517E] font-cs-canela font-normal text-4xl sm:text-5xl lg:text-6xl">
+                Welcome to our website, where we specialise in providing high-end, exclusive tours of Europe.
+            </h3>
+        </div>
+
+        <!-- Content Section -->
+        <div class="flex flex-col lg:flex-row gap-10 lg:gap-16 xl:gap-24 mx-auto items-center">
+            <!-- Image Box -->
+            <div class="w-full h-auto md:max-w-xl">
+                <img class="w-full h-auto object-cover" src="img/contactus.png" alt="Image">
+            </div>
+
+            <!-- Text Box -->
+            <div class="max-w-xl w-full h-auto  flex flex-col gap-8 sm:gap-10 lg:gap-12">
+                <div class="flex flex-col gap-4">
+                    <h4 class="text-[#26517E] font-cs-canela font-normal text-2xl sm:text-3xl lg:text-4xl">
+                        The start of our adventures
+                    </h4>
+                    <div class="flex flex-col gap-4">
+                        <p class="font-inter font-normal text-sm text-[#404040] sm:text-base lg:text-lg sm:leading-6">
+                            Our business was founded in 2005 by Romain Bapst and Martin O'Dee, who shared a passion for
+                            travel and a desire to create unforgettable experiences for their clients. What started as a
+                            "one-off tour" for their friends in the Chaine des Rotisseurs has grown into a successful
+                            bespoke tour business.
+                        </p>
+                        <p class="font-inter font-normal text-sm text-[#404040] sm:text-base lg:text-lg sm:leading-6">
+                            Every trip we offer is an exclusive experience and has many elements that you cannot get on
+                            normal tours. We conduct boutique tours with a maximum of 8 guests only, ensuring a high
+                            degree of personalised service and an intimate group size. Our tours take you to areas that
+                            commercial tours don't go, allowing you to experience a greater level of local culture,
+                            cuisine and wines.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div
+        class="px-4 w-full mt-12 mx-auto max-h-full overflow-x-hidden p-4 md:p-20 flex flex-col gap-8 md:gap-20 bg-gradient-to-t from-blue-800/5 to-white">
+        <div class="w-full gap-4 text-center flex flex-col">
+            <div class="font-normal text-4xl md:text-5xl leading-tight font-cs-canela text-[#26517E]">Founder of Chef
+                Tour</div>
+        </div>
+
+        <div
+            class="w-full mb-8 md:max-w-7xl md:w-full md:h-80 h-auto px-8 md:px-72 mx-auto flex items-center justify-center gap-8">
+            <!-- First Section -->
+            <div class="flex flex-col items-center md:w-64 w-28 gap-5">
+                <!-- Image Container -->
+                <div class="rounded-full w-28 h-28 md:w-64 md:h-64">
+                    <img src="img/mr_martiin.png" alt="Mr. Martin O'Dee"
+                        class="w-full h-full object-cover rounded-full">
+                </div>
+                <!-- Text Section -->
+                <div class="w-full">
+                    <h4 class="font-cs-canela font-normal text-center text-[#26517E] md:text-3xl text-lg">
+                        Mr. Martin O'Dee
+                    </h4>
+                </div>
+            </div>
+
+            <!-- Horizontal Divider -->
+            <div class="border-t border-[#3E7FB9] w-12 md:w-28"></div>
+
+            <!-- Second Section -->
+            <div class="flex flex-col items-center md:w-64 w-28 gap-5">
+                <!-- Image Container -->
+                <div class="rounded-full w-28 h-28 md:w-64 md:h-64">
+                    <img src="img/chef_romain.png" alt="Chef Romain Bapst"
+                        class="w-full h-full object-cover rounded-full">
+                </div>
+                <!-- Text Section -->
+                <div class="w-full">
+                    <h4 class="font-cs-canela font-normal text-center text-[#26517E] md:text-3xl text-lg">
+                        Chef Romain Bapst
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <div class="w-full mt-12 mb-9 sm:mt-16 sm:mb-12 p-4 sm:p-8 lg:p-12 lg:gap-32 mx-auto flex flex-col gap-12">
+        <!-- Content Section -->
+        <div class="flex flex-col lg:flex-row gap-10 lg:gap-16 xl:gap-24 mx-auto items-center">
+            <!-- Image Box -->
+            <div class="w-full h-auto md:max-w-xl order-1 lg:order-2">
+                <img class="w-full h-auto object-cover" src="img/aboutus2.png" alt="Image">
+            </div>
+
+            <!-- Text Box -->
+            <div class="max-w-xl w-full h-auto flex flex-col gap-8 sm:gap-10 lg:gap-12 order-2 lg:order-1">
+                <div class="flex flex-col gap-4">
+                    <h4 class="text-[#26517E] font-cs-canela font-normal text-2xl sm:text-3xl lg:text-4xl">
+                        About Romain Bapst
+                    </h4>
+                    <div class="flex flex-col gap-4">
+                        <p class="font-inter font-normal text-sm text-[#404040] sm:text-base lg:text-lg sm:leading-6">
+                            Romain Bapst is a culinary legend and an acclaimed executive chef, originally from the
+                            Alsatian
+                            city of Strasbourg in France. After intensive training in France, Romain moved to Australia
+                            in
+                            1990, where he has worked at numerous award-winning restaurants, including Mietta's
+                            Melbourne,
+                            Hayman Island Resort, Il Centro Brisbane, Drift restaurants, and his own Lutèce Bistro &
+                            Wine Bar
+                            in Bardon.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w-full mt-12 mb-9 sm:mt-16  sm:mb-12 p-4 sm:p-8 lg:p-12 lg:gap-32 mx-auto flex flex-col gap-12">
+        <!-- Content Section -->
+        <div class="flex flex-col lg:flex-row gap-10 lg:gap-16 xl:gap-24 mx-auto items-center">
+            <!-- Image Box -->
+            <div class="w-full h-auto md:max-w-xl">
+                <img class="w-full h-auto object-cover" src="img/aboutus3.png" alt="Image">
+            </div>
+
+            <!-- Text Box -->
+            <div class="max-w-xl w-full h-auto  flex flex-col gap-8 sm:gap-10 lg:gap-12">
+                <div class="flex flex-col gap-4">
+                    <h4 class="text-[#26517E] font-cs-canela font-normal text-2xl sm:text-3xl lg:text-4xl">
+                        About Martin O’Dee
+                    </h4>
+                    <div class="flex flex-col gap-4">
+                        <p class="font-inter font-normal text-sm text-[#404040] sm:text-base lg:text-lg sm:leading-6">
+                            Martin's role is more "back of house", assisting with logistics and administration to ensure
+                            that each tour runs seamlessly. Martin first joined Chaine des Rotisseurs in 1996 and was
+                            the Echanson d'Australie for Ordre Mondial des Gourmets Dégustateurs (OMGD) for several
+                            years. In the early 2000s, Martin started a business teaching wine and spirits, now called
+                            Bacchus Academy, that teaches international qualifications in wine and spirits. Obviously,
+                            he has a strong interest in wines and spirits, and our tours reflect that as well.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="bg-[#F3F7FC] w-full flex flex-col   md:py-28  py-10 gap-6 px-4 mx-auto">
+        <div class="mx-auto text-center">
+            <img src="img/logo-about.png" alt="Logo" class="mx-auto">
+        </div>
+        <div class="h-96 sm:max-w-3xl mx-auto">
+            <p class="text-[#26517E] font-cs-canela text-center text-base md:text-2xl leading-relaxed">
+                “We believe that travel is not just about seeing the sights but also about creating memories that last a
+                lifetime. We strive to provide a seamless and stress-free experience for our clients, allowing them to
+                fully immerse themselves in the culture, history, and beauty of Europe. Many of our guests have traveled
+                to Europe a number of times but have never been disappointed with our tours. They are always amazed by
+                the experience and our first group, over 15 years later, are still talking about it with fondness.
+            </p>
+            <p class="text-[#26517E] font-cs-canela text-center text-base md:text-2xl leading-relaxed mt-4">
+                We invite you to explore our website and discover the tours we offer. Join us and experience a tour with
+                access, bespoke experiences, food, and wine that will be second to none. Meet the Chefs, visit the
+                wineries, and see the history of the regions. Our bespoke tours are purposely exclusive and designed for
+                small groups, ensuring that you get the most out of the experience.”
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+    <div class=" w-full mx-auto py-12 md:py-32 gap-12 px-4 flex flex-wrap">
+        <div class="w-full  gap-4 text-center flex flex-col">
+            <div class="font-normal text-4xl md:text-5xl leading-tight font-cs-canela text-[#16263B]">Get in touch</div>
+            <div class="font-inter text-sm md:text-xl leading-7">Contact Chefs Tours to get more information
+                about our
+                restaurant trip.</div>
+        </div>
+
+        <div class="max-w-xl w-full mx-auto p-4 flex flex-col gap-4">
+            <!-- Name Field -->
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700 text-sm font-medium mb-2">
+                    Name <span class="text-red-500">*</span>
+                </label>
+                <input type="text" id="name" placeholder="Eg : Jack Daniel"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <!-- Email Field -->
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 text-sm font-medium mb-2">
+                    Email <span class="text-red-500">*</span>
+                </label>
+                <input type="email" id="email" placeholder="Eg : jack@email.com"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <!-- Phone Number Field -->
+            <div class="mb-4">
+                <label for="phone" class="block text-gray-700 text-sm font-medium mb-2">
+                    Phone Number <span class="text-red-500">*</span>
+                </label>
+
+                <div class="flex items-center">
+                    <button id="dropdown-phone-button" data-dropdown-toggle="dropdown-phone"
+                        class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900  border border-gray-300 rounded-s-lg hover:bg-gray-200 focus:ring-2 focus:outline-none  focus:ring-blue-500  "
+                        type="button">
+                        <svg fill="none" aria-hidden="true" class="h-4 w-4 me-2" viewBox="0 0 20 15">
+                            <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                            <mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0"
+                                maskUnits="userSpaceOnUse">
+                                <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                            </mask>
+                            <g mask="url(#a)">
+                                <path fill="#D02F44" fill-rule="evenodd"
+                                    d="M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z"
+                                    clip-rule="evenodd" />
+                                <path fill="#46467F" d="M0 .5h8.4v6.533H0z" />
+                                <g filter="url(#filter0_d_343_121520)">
+                                    <path fill="url(#paint0_linear_343_121520)" fill-rule="evenodd"
+                                        d="M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z"
+                                        clip-rule="evenodd" />
+                                </g>
+                            </g>
+                            <defs>
+                                <linearGradient id="paint0_linear_343_121520" x1=".933" x2=".933" y1="1.433" y2="6.1"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#fff" />
+                                    <stop offset="1" stop-color="#F0F0F0" />
+                                </linearGradient>
+                                <filter id="filter0_d_343_121520" width="6.533" height="5.667" x=".933" y="1.433"
+                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                    <feOffset dy="1" />
+                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                                    <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_343_121520" />
+                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_343_121520" result="shape" />
+                                </filter>
+                            </defs>
+                        </svg>
+                        <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 4 4 4-4" />
+                        </svg>
+
+                        <div class="ml-2"> +1 </div>
+                    </button>
+                    <div id="dropdown-phone"
+                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-52 ">
+                        <ul class="py-2 text-sm text-gray-700 " aria-labelledby="dropdown-phone-button">
+                            <li>
+                                <button type="button"
+                                    class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100  dark:hover:bg-gray-600 dark:hover:text-white"
+                                    role="menuitem">
+                                    <div class="inline-flex items-center">
+                                        <svg fill="none" aria-hidden="true" class="h-4 w-4 me-2" viewBox="0 0 20 15">
+                                            <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                            <mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0"
+                                                maskUnits="userSpaceOnUse">
+                                                <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                            </mask>
+                                            <g mask="url(#a)">
+                                                <path fill="#D02F44" fill-rule="evenodd"
+                                                    d="M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z"
+                                                    clip-rule="evenodd" />
+                                                <path fill="#46467F" d="M0 .5h8.4v6.533H0z" />
+                                                <g filter="url(#filter0_d_343_121520)">
+                                                    <path fill="url(#paint0_linear_343_121520)" fill-rule="evenodd"
+                                                        d="M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z"
+                                                        clip-rule="evenodd" />
+                                                </g>
+                                            </g>
+                                            <defs>
+                                                <linearGradient id="paint0_linear_343_121520" x1=".933" x2=".933"
+                                                    y1="1.433" y2="6.1" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#fff" />
+                                                    <stop offset="1" stop-color="#F0F0F0" />
+                                                </linearGradient>
+                                                <filter id="filter0_d_343_121520" width="6.533" height="5.667" x=".933"
+                                                    y="1.433" color-interpolation-filters="sRGB"
+                                                    filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                                    <feOffset dy="1" />
+                                                    <feColorMatrix
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_343_121520" />
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_343_121520"
+                                                        result="shape" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                        United States (+1)
+                                    </div>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button"
+                                    class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100  dark:hover:bg-gray-600 dark:hover:text-white"
+                                    role="menuitem">
+                                    <div class="inline-flex items-center">
+                                        <svg class="h-4 w-4 me-2" fill="none" viewBox="0 0 20 15">
+                                            <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                            <mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0"
+                                                maskUnits="userSpaceOnUse">
+                                                <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                            </mask>
+                                            <g mask="url(#a)">
+                                                <path fill="#0A17A7" d="M0 .5h19.6v14H0z" />
+                                                <path fill="#fff" fill-rule="evenodd"
+                                                    d="M-.898-.842L7.467 4.8V-.433h4.667V4.8l8.364-5.642L21.542.706l-6.614 4.46H19.6v4.667h-4.672l6.614 4.46-1.044 1.549-8.365-5.642v5.233H7.467V10.2l-8.365 5.642-1.043-1.548 6.613-4.46H0V5.166h4.672L-1.941.706-.898-.842z"
+                                                    clip-rule="evenodd" />
+                                                <path stroke="#DB1F35" stroke-linecap="round" stroke-width=".667"
+                                                    d="M13.067 4.933L21.933-.9M14.009 10.088l7.947 5.357M5.604 4.917L-2.686-.67M6.503 10.024l-9.189 6.093" />
+                                                <path fill="#E6273E" fill-rule="evenodd"
+                                                    d="M0 8.9h8.4v5.6h2.8V8.9h8.4V6.1h-8.4V.5H8.4v5.6H0v2.8z"
+                                                    clip-rule="evenodd" />
+                                            </g>
+                                        </svg>
+                                        United Kingdom (+44)
+                                    </div>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button"
+                                    class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100  dark:hover:bg-gray-600 dark:hover:text-white"
+                                    role="menuitem">
+                                    <div class="inline-flex items-center">
+                                        <svg class="h-4 w-4 me-2" fill="none" viewBox="0 0 20 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                            <mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0"
+                                                maskUnits="userSpaceOnUse">
+                                                <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                            </mask>
+                                            <g mask="url(#a)">
+                                                <path fill="#0A17A7" d="M0 .5h19.6v14H0z" />
+                                                <path fill="#fff" stroke="#fff" stroke-width=".667"
+                                                    d="M0 .167h-.901l.684.586 3.15 2.7v.609L-.194 6.295l-.14.1v1.24l.51-.319L3.83 5.033h.73L7.7 7.276a.488.488 0 00.601-.767L5.467 4.08v-.608l2.987-2.134a.667.667 0 00.28-.543V-.1l-.51.318L4.57 2.5h-.73L.66.229.572.167H0z" />
+                                                <path fill="url(#paint0_linear_374_135177)" fill-rule="evenodd"
+                                                    d="M0 2.833V4.7h3.267v2.133c0 .369.298.667.666.667h.534a.667.667 0 00.666-.667V4.7H8.2a.667.667 0 00.667-.667V3.5a.667.667 0 00-.667-.667H5.133V.5H3.267v2.333H0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill="url(#paint1_linear_374_135177)" fill-rule="evenodd"
+                                                    d="M0 3.3h3.733V.5h.934v2.8H8.4v.933H4.667v2.8h-.934v-2.8H0V3.3z"
+                                                    clip-rule="evenodd" />
+                                                <path fill="#fff" fill-rule="evenodd"
+                                                    d="M4.2 11.933l-.823.433.157-.916-.666-.65.92-.133.412-.834.411.834.92.134-.665.649.157.916-.823-.433zm9.8.7l-.66.194.194-.66-.194-.66.66.193.66-.193-.193.66.193.66-.66-.194zm0-8.866l-.66.193.194-.66-.194-.66.66.193.66-.193-.193.66.193.66-.66-.193zm2.8 2.8l-.66.193.193-.66-.193-.66.66.193.66-.193-.193.66.193.66-.66-.193zm-5.6.933l-.66.193.193-.66-.193-.66.66.194.66-.194-.193.66.193.66-.66-.193zm4.2 1.167l-.33.096.096-.33-.096-.33.33.097.33-.097-.097.33.097.33-.33-.096z"
+                                                    clip-rule="evenodd" />
+                                            </g>
+                                            <defs>
+                                                <linearGradient id="paint0_linear_374_135177" x1="0" x2="0" y1=".5"
+                                                    y2="7.5" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#fff" />
+                                                    <stop offset="1" stop-color="#F0F0F0" />
+                                                </linearGradient>
+                                                <linearGradient id="paint1_linear_374_135177" x1="0" x2="0" y1=".5"
+                                                    y2="7.033" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#FF2E3B" />
+                                                    <stop offset="1" stop-color="#FC0D1B" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                        Australia (+61)
+                                    </div>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button"
+                                    class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100  dark:hover:bg-gray-600 dark:hover:text-white"
+                                    role="menuitem">
+                                    <div class="inline-flex items-center">
+                                        <svg class="w-4 h-4 me-2" fill="none" viewBox="0 0 20 15">
+                                            <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                            <mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0"
+                                                maskUnits="userSpaceOnUse">
+                                                <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                            </mask>
+                                            <g mask="url(#a)">
+                                                <path fill="#262626" fill-rule="evenodd" d="M0 5.167h19.6V.5H0v4.667z"
+                                                    clip-rule="evenodd" />
+                                                <g filter="url(#filter0_d_374_135180)">
+                                                    <path fill="#F01515" fill-rule="evenodd"
+                                                        d="M0 9.833h19.6V5.167H0v4.666z" clip-rule="evenodd" />
+                                                </g>
+                                                <g filter="url(#filter1_d_374_135180)">
+                                                    <path fill="#FFD521" fill-rule="evenodd"
+                                                        d="M0 14.5h19.6V9.833H0V14.5z" clip-rule="evenodd" />
+                                                </g>
+                                            </g>
+                                            <defs>
+                                                <filter id="filter0_d_374_135180" width="19.6" height="4.667" x="0"
+                                                    y="5.167" color-interpolation-filters="sRGB"
+                                                    filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                                    <feOffset />
+                                                    <feColorMatrix
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_374_135180" />
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_374_135180"
+                                                        result="shape" />
+                                                </filter>
+                                                <filter id="filter1_d_374_135180" width="19.6" height="4.667" x="0"
+                                                    y="9.833" color-interpolation-filters="sRGB"
+                                                    filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                                    <feOffset />
+                                                    <feColorMatrix
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_374_135180" />
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_374_135180"
+                                                        result="shape" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                        Germany (+49)
+                                    </div>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button"
+                                    class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100  dark:hover:bg-gray-600 dark:hover:text-white"
+                                    role="menuitem">
+                                    <div class="inline-flex items-center">
+                                        <svg class="w-4 h-4 me-2" fill="none" viewBox="0 0 20 15">
+                                            <rect width="19.1" height="13.5" x=".25" y=".75" fill="#fff"
+                                                stroke="#F5F5F5" stroke-width=".5" rx="1.75" />
+                                            <mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0"
+                                                maskUnits="userSpaceOnUse">
+                                                <rect width="19.1" height="13.5" x=".25" y=".75" fill="#fff"
+                                                    stroke="#fff" stroke-width=".5" rx="1.75" />
+                                            </mask>
+                                            <g mask="url(#a)">
+                                                <path fill="#F44653" d="M13.067.5H19.6v14h-6.533z" />
+                                                <path fill="#1035BB" fill-rule="evenodd" d="M0 14.5h6.533V.5H0v14z"
+                                                    clip-rule="evenodd" />
+                                            </g>
+                                        </svg>
+                                        France (+33)
+                                    </div>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button"
+                                    class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100  dark:hover:bg-gray-600 dark:hover:text-white"
+                                    role="menuitem">
+                                    <div class="inline-flex items-center">
+                                        <svg class="w-4 h-4 me-2" fill="none" viewBox="0 0 20 15">
+                                            <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                            <mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0"
+                                                maskUnits="userSpaceOnUse">
+                                                <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                            </mask>
+                                            <g mask="url(#a)">
+                                                <path fill="#262626" fill-rule="evenodd" d="M0 5.167h19.6V.5H0v4.667z"
+                                                    clip-rule="evenodd" />
+                                                <g filter="url(#filter0_d_374_135180)">
+                                                    <path fill="#F01515" fill-rule="evenodd"
+                                                        d="M0 9.833h19.6V5.167H0v4.666z" clip-rule="evenodd" />
+                                                </g>
+                                                <g filter="url(#filter1_d_374_135180)">
+                                                    <path fill="#FFD521" fill-rule="evenodd"
+                                                        d="M0 14.5h19.6V9.833H0V14.5z" clip-rule="evenodd" />
+                                                </g>
+                                            </g>
+                                            <defs>
+                                                <filter id="filter0_d_374_135180" width="19.6" height="4.667" x="0"
+                                                    y="5.167" color-interpolation-filters="sRGB"
+                                                    filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                                    <feOffset />
+                                                    <feColorMatrix
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_374_135180" />
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_374_135180"
+                                                        result="shape" />
+                                                </filter>
+                                                <filter id="filter1_d_374_135180" width="19.6" height="4.667" x="0"
+                                                    y="9.833" color-interpolation-filters="sRGB"
+                                                    filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                                    <feOffset />
+                                                    <feColorMatrix
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_374_135180" />
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_374_135180"
+                                                        result="shape" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                        Germany (+49)
+                                    </div>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <label for="phone-input"
+                        class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Phone number:</label>
+                    <div class="relative w-full">
+                        <input type="phone" id="phone-input"
+                            class="block p-2.5 w-full z-20 text-sm text-gray-900 rounded-e-lg border-s-0 border border-gray-300 focus:ring-blue-500 focus:border-blue-500   dark:text-white dark:focus:border-blue-500"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required />
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <!-- Address Field -->
+            <div class="mb-4">
+                <label for="address" class="block text-gray-700 text-sm font-medium mb-2">
+                    Address <span class="text-red-500">*</span>
+                </label>
+                <input type="text" id="address"
+                    placeholder="Eg : 6 Collyer Quay, #26-00 Income at Raffles, Singapore 049318"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <!-- Message Field -->
+            <div class="mb-4">
+                <label for="message" class="block text-gray-700 text-sm font-medium mb-2">
+                    Message
+                </label>
+                <textarea id="message" placeholder="Enter your message here" rows="4"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+            </div>
+
+            <button type="submit"
+                class="w-full bg-[#3E7FB9] text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                SEND ME MORE INFORMATION
+            </button>
+        </div>
+    </div>  
+
+
+    <footer
+        class="w-full  mx-auto pt-12 px-6 sm:px-12 md:px-20 lg:px-32 gap-8 md:gap-10 flex flex-col pb-8 bg-[#223B58] text-white">
+        <div class="flex flex-col   md:flex-row gap-10 md:gap-80">
+            <!-- First Column -->
+            <div class="flex flex-col  gap-6 w-full md:max-w-xl">
+                <div class="flex gap-2">
+                    <div>
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+                    <div>
+                        <h4 class="font-allura font-normal text-2xl sm:text-3xl text-white">Chefs Tours</h4>
+                    </div>
+                </div>
+                <div class="text-sm leading-5 font-normal">
+                    Culinary and Beverage Tours and Experiences for Discerning Public and Hospitality
+                    Professionals.
+                </div>
+                <div class="flex flex-col">
+                    <div class="text-sm font-medium">Address Office</div>
+                    <div class="font-normal text-sm leading-5">
+                        35 Selegie Road <br> #10-01 <br> Parklane Shopping Mall <br> Singapore (188307)
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Us, Quick Links, Social Media Columns -->
+            <div class="grid grid-cols-2   w-full md:max-w-3xl sm:grid-cols-2 lg:grid-cols-3 gap-y-6">
+
+                <!-- Contact Us Column -->
+                <div class="w-40  md:w-44 gap-4 flex  flex-col">
+                    <h2 class="text-sm font-medium leading-5">Contact Us</h2>
+                    <div class="flex flex-col">
+                        <div class="text-sm font-medium">Email :</div>
+                        <div class="font-normal text-sm leading-5">info@chefstour.com</div>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="text-sm font-medium">Telephone</div>
+                        <div class="font-normal text-sm leading-5">+61820930232</div>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="w-40 md:w-44  gap-2 flex flex-col">
+                    <h2 class="text-sm font-medium leading-5">Quick Links</h2>
+                    <a href="#" class="font-normal text-sm leading-5">Home</a>
+                    <a href="#" class="font-normal text-sm leading-5">About</a>
+                    <a href="#" class="font-normal text-sm leading-5">Tour</a>
+                    <a href="#" class="font-normal text-sm leading-5">Contact Us</a>
+                </div>
+
+                <!-- Social Media Column -->
+                <div class="w-40 md:w-60 gap-4  flex flex-col">
+                    <h2 class="text-sm font-medium leading-5">Social Media</h2>
+                    <a href="#" class="font-normal text-sm leading-5 flex items-center">
+                        <img src="img/instagram.png" alt="Instagram" class="w-5 h-5 mr-2">Instagram
+                    </a>
+                    <a href="#" class="font-normal text-sm leading-5 flex items-center">
+                        <img src="img/facebook.png" alt="Facebook" class="w-5 h-5 mr-2">Facebook
+                    </a>
+                    <a href="#" class="font-normal text-sm leading-5 flex items-center">
+                        <img src="img/youtube.png" alt="YouTube" class="w-5 h-5 mr-2">YouTube
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="border-t border-[#26517E] "></div>
+
+        <div class="text-xs font-normal leading-4 text-start ">Chef Tour ⓒ 2024 All Rights Reserved</div>
+    </footer>
+
+    <script>
+        document.addEventListener('scroll', () => {
+            document.getElementById('navbar').classList.toggle('navbar-scrolled', window.scrollY > 50);
+        });
+
+        document.getElementById('hamburger-menu').addEventListener('click', function () {
+            var wrapper = document.getElementById('wrapper');
+            wrapper.classList.toggle('hidden');
+            wrapper.classList.toggle('block');
+        });
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+</body>
+
+</html>
